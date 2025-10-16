@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>You on the Planets - Home</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css" media="(min-width: 768px)">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/planet.png" alt="Planet Logo">
+                <span>You on the planets</span>
+             </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="planets.html">Planets</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Do you know how much weight you have on the planets?</h1>
+                <p>Discover your weight across our solar system and explore the fascinating differences in gravity between planets.</p>
+                <button class="cta-button" onclick="window.location.href='planets.html'">Let's see it!!</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/all-planets.png" alt="Solar System Planets" class="planets-image">
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="features-container">
+                <div class="feature">
+                    <h3>🪐 8 Planets</h3>
+                    <p>Calculate your weight on all planets in our solar system</p>
+                </div>
+                <div class="feature">
+                    <h3>🔬 Real Physics</h3>
+                    <p>Based on actual gravitational data from each planet</p>
+                </div>
+                <div class="feature">
+                    <h3>📱 Interactive</h3>
+                    <p>Easy-to-use interface for all devices</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span> 🌋 Diego Andres Huarsaya Cruz 🌋 Peru - Arequipa</p>
+        <p id="lastModified"></p>
+    </footer>
+
     
 </body>
 </html>

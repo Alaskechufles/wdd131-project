@@ -3,9 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planets</title>
+    <title>Planet Weight Calculator</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/planets.css">
+    <link rel="stylesheet" href="styles/planets-large.css" media="(min-width: 768px)">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/planets.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/planet.png" alt="Planet Logo">
+                <span>You on the planets</span>
+             </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="planets.html" class="active">Planets</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="calculator-section">
+            <div class="calculator-container">
+                <h1>Planet Weight Calculator</h1>
+                
+                <div class="input-section">
+                    <div class="weight-input-group">
+                        <label for="weightInput">Enter your weight:</label>
+                        <input type="number" id="weightInput" placeholder="Enter your weight" min="1" step="0.1">
+                        <span class="unitInput">kg</span>
+                    </div>
+                    
+                    <div class="planet-select-group">
+                        <label for="planetSelect">Select a planet:</label>
+                        <select id="planetSelect">
+                            <option value="">Select a planet</option>
+                            <option value="mercury">Mercury</option>
+                            <option value="venus">Venus</option>
+                            <option value="earth">Earth</option>
+                            <option value="mars">Mars</option>
+                            <option value="jupiter">Jupiter</option>
+                            <option value="saturn">Saturn</option>
+                            <option value="uranus">Uranus</option>
+                            <option value="neptune">Neptune</option>
+                        </select>
+                    </div>
+                    
+                    <button id="calculateButton">Calculate Weight</button>
+                </div>
+
+                <div class="result-section" id="resultSection">
+                    <img id="planetImage" src="images/earth.png" alt="Selected Planet" class="planet-img">
+                    <div class="planet-display">
+                        <h2 id="planetName">Earth</h2>
+                    </div>
+                    
+                    <div class="weight-result">
+                        <h3>Your weight on <span id="selectedPlanetName">Earth</span>:</h3>
+                        <div class="weight-display">
+                            <span id="calculatedWeight">0 kg</span>
+                            
+                        </div>
+                        <div class="gravity-info">
+                            <p>Gravity: <span id="gravityFactor">1.0</span>× Earth's gravity</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="planets-grid">
+                    <h3>Quick Select:</h3>
+                    <div class="planets-container">
+                        <div class="planet-option" data-planet="mercury">
+                            <img src="images/mercury.png" alt="Mercury">
+                            <span>Mercury</span>
+                        </div>
+                        <div class="planet-option" data-planet="venus">
+                            <img src="images/venus.png" alt="Venus">
+                            <span>Venus</span>
+                        </div>
+                        <div class="planet-option selected" data-planet="earth">
+                            <img src="images/earth.png" alt="Earth">
+                            <span>Earth</span>
+                        </div>
+                        <div class="planet-option" data-planet="mars">
+                            <img src="images/mars.png" alt="Mars">
+                            <span>Mars</span>
+                        </div>
+                        <div class="planet-option" data-planet="jupiter">
+                            <img src="images/jupiter.png" alt="Jupiter">
+                            <span>Jupiter</span>
+                        </div>
+                        <div class="planet-option" data-planet="saturn">
+                            <img src="images/saturn.png" alt="Saturn">
+                            <span>Saturn</span>
+                        </div>
+                        <div class="planet-option" data-planet="uranus">
+                            <img src="images/uranus.png" alt="Uranus">
+                            <span>Uranus</span>
+                        </div>
+                        <div class="planet-option" data-planet="neptune">
+                            <img src="images/neptune.png" alt="Neptune">
+                            <span>Neptune</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span> 🌋 Diego Andres Huarsaya Cruz 🌋 Peru - Arequipa</p>
+        <p id="lastModified"></p>
+    </footer>
+
+   
 </body>
 </html>

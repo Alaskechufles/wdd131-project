@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About - You on the Planets</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/about-large.css" media="(min-width: 768px)">
+    <script src="scripts/planets.js" defer></script>
+    <script src="scripts/about.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/planet.png" alt="Planet Logo">
+                <span>You on the planets</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="planets.html">Planets</a>
+                <a href="about.html" class="active">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-intro">
+            <div class="intro-container">
+                <h1>About Our Solar System</h1>
+                <p>The purpose of this site is to provide users with an interactive platform to learn about their weight
+                    on different planets, fostering a sense of curiosity and exploration about our solar system.</p>
+                <p>Discover fascinating facts about each planet and understand how gravity affects your weight across
+                    our cosmic neighborhood.</p>
+            </div>
+        </section>
+
+        <section class="planets-info">
+            <div class="planets-container">
+                <h2>Explore the Planets</h2>
+                <div class="planets-grid" id="planetsGrid">
+                </div>
+            </div>
+        </section>
+
+        <section class="project-info">
+            <div class="info-container">
+                <h2>About This Project</h2>
+                <div class="info-content">
+                    <div class="info-text">
+                        <h3>Educational Purpose</h3>
+                        <p>This interactive calculator helps you understand the concept of gravity and how it varies
+                            between different celestial bodies in our solar system.</p>
+
+                        <h3>How It Works</h3>
+                        <p>Each planet has a different gravitational pull based on its mass and size. Our calculator
+                            uses real scientific data to show you exactly how much you would weigh on each planet.</p>
+
+                        <h3>Scientific Accuracy</h3>
+                        <p>All gravity factors and planetary data used in this application are based on current
+                            scientific measurements and NASA data.</p>
+                    </div>
+                    <div class="info-image">
+                        <img src="images/all-planets.png" alt="Solar System" class="solar-system-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span> 🌋 Diego Andres Huarsaya Cruz 🌋 Peru - Arequipa</p>
+        <p id="lastModified"></p>
+    </footer>
+
+
 </body>
+
 </html>

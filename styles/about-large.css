@@ -1,0 +1,167 @@
+/* Desktop styles for About page - Min-width: 768px */
+
+/* Header adjustments */
+header {
+    padding: 1.5rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+}
+
+.nav-links {
+    gap: 2rem;
+}
+
+.nav-links a {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.2rem;
+}
+
+/* About Intro Desktop */
+.about-intro {
+    padding: 4rem 2rem;
+}
+
+.about-intro h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.about-intro p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Planets Info Desktop */
+.planets-info {
+    padding: 4rem 2rem;
+}
+
+.planets-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Planets Grid Desktop */
+.planets-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+/* Planet Cards Desktop */
+.planet-card {
+    padding: 2rem;
+    transition: all 0.4s ease;
+}
+
+.planet-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 188, 212, 0.4);
+}
+
+.planet-card-header {
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.planet-card-img {
+    width: 80px;
+    height: 80px;
+}
+
+.planet-name {
+    font-size: 1.8rem;
+}
+
+.planet-fact {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.planet-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat {
+    padding: 0.5rem 0;
+    margin-bottom: 0.8rem;
+}
+
+.stat-label,
+.stat-value {
+    font-size: 1rem;
+}
+
+.calculate-link {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+/* Project Info Desktop */
+.project-info {
+    padding: 4rem 2rem;
+}
+
+.project-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.info-content {
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+}
+
+.info-text {
+    flex: 2;
+}
+
+.info-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.info-image {
+    flex: 1;
+}
+
+.solar-system-img {
+    max-width: 500px;
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+    .planets-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .about-intro h1 {
+        font-size: 3.5rem;
+    }
+    
+    .planets-container h2,
+    .project-info h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Extra Large Desktop */
+@media (min-width: 1600px) {
+    .planets-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

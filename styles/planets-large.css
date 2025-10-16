@@ -1,0 +1,168 @@
+/* Desktop Layout - Min-width: 768px */
+
+/* Header adjustments */
+header {
+    padding: 1.5rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+}
+
+.nav-links {
+    gap: 2rem;
+}
+
+.nav-links a {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.2rem;
+}
+
+/* Calculator Section Desktop Layout */
+.calculator-section {
+    padding: 2rem;
+}
+
+.calculator-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 2.5rem;
+    align-items: start;
+}
+
+.calculator-container h1 {
+    grid-column: 1 / -1;
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Input Section Desktop */
+.input-section {
+    margin-bottom: 0;
+}
+
+.weight-input-group,
+.planet-select-group {
+    margin-bottom: 2rem;
+}
+
+#weightInput,
+#planetSelect {
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+#calculateButton {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.2rem;
+}
+
+/* Result Section Desktop */
+.result-section {
+    grid-column: 2;
+    grid-row: 2;
+    margin-bottom: 0;
+    padding: 2rem;
+    min-height: 450px;
+}
+
+.planet-display {
+    margin-bottom: 2rem;
+}
+
+.planet-img {
+    width: 200%;
+    height: 200%;
+    opacity: 0.35;
+}
+
+.planet-display h2 {
+    font-size: 2.5rem;
+}
+
+.weight-result h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.weight-display {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.gravity-info {
+    font-size: 1.1rem;
+}
+
+/* Planets Grid Desktop */
+.planets-grid {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+}
+
+.planets-grid h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.planets-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.planet-option {
+    padding: 1rem;
+}
+
+.planet-option img {
+    width: 60px;
+    height: 60px;
+}
+
+.planet-option span {
+    font-size: 0.9rem;
+}
+
+/* Enhanced hover effects */
+.planet-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 188, 212, 0.3);
+}
+
+#calculateButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 140, 0, 0.4);
+}
+
+/* Large Desktop Adjustments */
+@media (min-width: 1200px) {
+    .calculator-container {
+        gap: 4rem;
+        padding: 3rem;
+    }
+    
+    .calculator-container h1 {
+        font-size: 2.5rem;
+    }
+    
+   
+    
+    .weight-display {
+        font-size: 3rem;
+    }
+    
+    .planets-container {
+        gap: 2rem;
+    }
+    
+    .planet-option img {
+        width: 70px;
+        height: 70px;
+    }
+}
