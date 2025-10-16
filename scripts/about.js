@@ -27,7 +27,7 @@ function createPlanetCard(planet, planetKey) {
     
     card.innerHTML = `
         <div class="planet-card-header">
-            <img src="${planet.image}" alt="${planet.name}" class="planet-card-img">
+            <img src="${planet.image}" alt="${planet.name}" class="planet-card-img" loading="lazy">
             <h3 class="planet-name">${planet.name}</h3>
         </div>
         
